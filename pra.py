@@ -4,12 +4,7 @@ class Character:
         self.name = name
         self.hp = hp
         self.stamina = stamina
-        self.gender = gender
 
-    def details_of_char(self):
-        print(f"Name: {self.name}")
-        print(f"HP: {self.hp}")
-        print(f"Stamina: {self.stamina}")
         print(f"Gender: {self.gender}")
 
 
