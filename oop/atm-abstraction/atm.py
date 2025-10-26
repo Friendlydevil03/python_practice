@@ -14,22 +14,24 @@ class ATM(user_show):
 
     def pin(self, pin_number):
         if self.pin_number.isnumeric():
-            print("please enter the amount")
+            print("Please enter the amount")
         else:
-            print("please enter a valid pin")
-
-    def withdraw(self, withdraw_cash):
-        if withdraw_cash < self.balance:
-            self.balance -= withdraw_cash
-            print("please take your cash")
-        elif withdraw_cash > self.balance:
-            print("insufficient funds")
+            print("Please enter a valid pin")
 
     def deposit(self,deposit_cash):
         if deposit_cash > 0 :
             self.balance += deposit_cash
+            print(f"${deposit_cash} deposited")
         else:
-            print("enter a valid deposit amount")
+            print("Enter a valid deposit amount")
+
+    def withdraw(self, withdraw_cash):
+        if withdraw_cash < self.balance:
+            self.balance -= withdraw_cash
+            print(f"${withdraw_cash} withdraded")
+        elif withdraw_cash > self.balance:
+            print("Insufficient funds")
+
 
     def balance_check(self):
-        print(self.balance)
+        print(f"Your bank balance is ${self.balance}")

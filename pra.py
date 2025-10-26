@@ -1,2 +1,2 @@
 s = "asdasd"
-s.is
+s.isalnum()
