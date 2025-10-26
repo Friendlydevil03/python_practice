@@ -1,3 +1,4 @@
+
 #object = A "bundle" of related attributes (variables) and methods (functions)
 #       ex . phone,cup,book
 #       you need a "class" to create many object
