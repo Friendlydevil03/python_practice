@@ -11,12 +11,13 @@ class user_show(ABC):
         pass
 
     @abstractmethod
-    def withdraw(self,withdraw_cash):
+    def deposit(self,Deposit_cash):
         pass
 
     @abstractmethod
-    def deposit(self,Deposit_cash):
+    def withdraw(self,withdraw_cash):
         pass
+
 
     @abstractmethod
     def balance_check(self):
