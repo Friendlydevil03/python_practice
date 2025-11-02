@@ -3,19 +3,19 @@ from abc import ABC,abstractmethod
 class user_show(ABC):
 
     @abstractmethod
-    def card(self,name):
+    def card(self,card):
+        pass
+
+    # @abstractmethod
+    # def pin(self):
+    #     pass
+
+    @abstractmethod
+    def deposit(self):
         pass
 
     @abstractmethod
-    def pin(self,pin_number):
-        pass
-
-    @abstractmethod
-    def deposit(self,Deposit_cash):
-        pass
-
-    @abstractmethod
-    def withdraw(self,withdraw_cash):
+    def withdraw(self):
         pass
 
 
